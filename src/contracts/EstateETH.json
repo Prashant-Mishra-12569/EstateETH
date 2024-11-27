@@ -1,190 +1,191 @@
 {
-  "abi": [
-    {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "_id",
-          "type": "uint256"
-        }
-      ],
-      "name": "buyProperty",
-      "outputs": [],
-      "stateMutability": "payable",
-      "type": "function"
-    },
-    {
-      "inputs": [],
-      "name": "getAllProperties",
-      "outputs": [
-        {
-          "components": [
-            {
-              "internalType": "uint256",
-              "name": "id",
-              "type": "uint256"
-            },
-            {
-              "internalType": "address",
-              "name": "owner",
-              "type": "address"
-            },
-            {
-              "internalType": "string",
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "internalType": "string",
-              "name": "location",
-              "type": "string"
-            },
-            {
-              "internalType": "uint256",
-              "name": "price",
-              "type": "uint256"
-            },
-            {
-              "internalType": "string",
-              "name": "imageHash",
-              "type": "string"
-            },
-            {
-              "internalType": "uint8",
-              "name": "bedrooms",
-              "type": "uint8"
-            },
-            {
-              "internalType": "string",
-              "name": "propertyType",
-              "type": "string"
-            },
-            {
-              "internalType": "uint8",
-              "name": "kitchens",
-              "type": "uint8"
-            },
-            {
-              "internalType": "bool",
-              "name": "isSold",
-              "type": "bool"
-            }
-          ],
-          "internalType": "struct EstateETH.Property[]",
-          "name": "",
-          "type": "tuple[]"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "inputs": [],
-      "name": "getMyProperties",
-      "outputs": [
-        {
-          "components": [
-            {
-              "internalType": "uint256",
-              "name": "id",
-              "type": "uint256"
-            },
-            {
-              "internalType": "address",
-              "name": "owner",
-              "type": "address"
-            },
-            {
-              "internalType": "string",
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "internalType": "string",
-              "name": "location",
-              "type": "string"
-            },
-            {
-              "internalType": "uint256",
-              "name": "price",
-              "type": "uint256"
-            },
-            {
-              "internalType": "string",
-              "name": "imageHash",
-              "type": "string"
-            },
-            {
-              "internalType": "uint8",
-              "name": "bedrooms",
-              "type": "uint8"
-            },
-            {
-              "internalType": "string",
-              "name": "propertyType",
-              "type": "string"
-            },
-            {
-              "internalType": "uint8",
-              "name": "kitchens",
-              "type": "uint8"
-            },
-            {
-              "internalType": "bool",
-              "name": "isSold",
-              "type": "bool"
-            }
-          ],
-          "internalType": "struct EstateETH.Property[]",
-          "name": "",
-          "type": "tuple[]"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "string",
-          "name": "_name",
-          "type": "string"
-        },
-        {
-          "internalType": "string",
-          "name": "_location",
-          "type": "string"
-        },
-        {
-          "internalType": "uint256",
-          "name": "_price",
-          "type": "uint256"
-        },
-        {
-          "internalType": "string",
-          "name": "_imageHash",
-          "type": "string"
-        },
-        {
-          "internalType": "uint8",
-          "name": "_bedrooms",
-          "type": "uint8"
-        },
-        {
-          "internalType": "string",
-          "name": "_propertyType",
-          "type": "string"
-        },
-        {
-          "internalType": "uint8",
-          "name": "_kitchens",
-          "type": "uint8"
-        }
-      ],
-      "name": "listProperty",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    }
-  ]
-}
+	"abi": [
+	  {
+		"inputs": [
+		  {
+			"internalType": "uint256",
+			"name": "_id",
+			"type": "uint256"
+		  }
+		],
+		"name": "buyProperty",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	  },
+	  {
+		"inputs": [],
+		"name": "getAllProperties",
+		"outputs": [
+		  {
+			"components": [
+			  {
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			  },
+			  {
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			  },
+			  {
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			  },
+			  {
+				"internalType": "string",
+				"name": "location",
+				"type": "string"
+			  },
+			  {
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			  },
+			  {
+				"internalType": "string",
+				"name": "imageHash",
+				"type": "string"
+			  },
+			  {
+				"internalType": "uint8",
+				"name": "bedrooms",
+				"type": "uint8"
+			  },
+			  {
+				"internalType": "string",
+				"name": "propertyType",
+				"type": "string"
+			  },
+			  {
+				"internalType": "uint8",
+				"name": "kitchens",
+				"type": "uint8"
+			  },
+			  {
+				"internalType": "bool",
+				"name": "isSold",
+				"type": "bool"
+			  }
+			],
+			"internalType": "struct EstateETH.Property[]",
+			"name": "",
+			"type": "tuple[]"
+		  }
+		],
+		"stateMutability": "view",
+		"type": "function"
+	  },
+	  {
+		"inputs": [],
+		"name": "getMyProperties",
+		"outputs": [
+		  {
+			"components": [
+			  {
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			  },
+			  {
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			  },
+			  {
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			  },
+			  {
+				"internalType": "string",
+				"name": "location",
+				"type": "string"
+			  },
+			  {
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			  },
+			  {
+				"internalType": "string",
+				"name": "imageHash",
+				"type": "string"
+			  },
+			  {
+				"internalType": "uint8",
+				"name": "bedrooms",
+				"type": "uint8"
+			  },
+			  {
+				"internalType": "string",
+				"name": "propertyType",
+				"type": "string"
+			  },
+			  {
+				"internalType": "uint8",
+				"name": "kitchens",
+				"type": "uint8"
+			  },
+			  {
+				"internalType": "bool",
+				"name": "isSold",
+				"type": "bool"
+			  }
+			],
+			"internalType": "struct EstateETH.Property[]",
+			"name": "",
+			"type": "tuple[]"
+		  }
+		],
+		"stateMutability": "view",
+		"type": "function"
+	  },
+	  {
+		"inputs": [
+		  {
+			"internalType": "string",
+			"name": "_name",
+			"type": "string"
+		  },
+		  {
+			"internalType": "string",
+			"name": "_location",
+			"type": "string"
+		  },
+		  {
+			"internalType": "uint256",
+			"name": "_price",
+			"type": "uint256"
+		  },
+		  {
+			"internalType": "string",
+			"name": "_imageHash",
+			"type": "string"
+		  },
+		  {
+			"internalType": "uint8",
+			"name": "_bedrooms",
+			"type": "uint8"
+		  },
+		  {
+			"internalType": "string",
+			"name": "_propertyType",
+			"type": "string"
+		  },
+		  {
+			"internalType": "uint8",
+			"name": "_kitchens",
+			"type": "uint8"
+		  }
+		],
+		"name": "listProperty",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	  }
+	]
+  }
+  

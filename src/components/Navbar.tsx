@@ -53,12 +53,7 @@ export const Navbar = () => {
             >
               List Property
             </Link>
-            <Link
-              to="/profile"
-              className="text-white hover:text-purple-300 transition-colors"
-            >
-              My Profile
-            </Link>
+          
             <Button
               onClick={connectWallet}
               className="bg-purple-600 hover:bg-purple-700 text-white"

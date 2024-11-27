@@ -7,7 +7,6 @@ import { Navbar } from "./components/Navbar";
 import Home from "./pages/Home";
 import BuyProperties from "./pages/BuyProperties";
 import ListProperty from "./pages/ListProperty";
-import Profile from "./pages/Profile";
 
 const queryClient = new QueryClient();
 
@@ -23,7 +22,6 @@ const App = () => (
             <Route path="/" element={<Home />} />
             <Route path="/buy" element={<BuyProperties />} />
             <Route path="/list" element={<ListProperty />} />
-            <Route path="/profile" element={<Profile />} />
           </Routes>
         </div>
       </BrowserRouter>

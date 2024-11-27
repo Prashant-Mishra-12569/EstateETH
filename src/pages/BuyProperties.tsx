@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import { PropertyCard } from "../components/PropertyCard";
 import { useToast } from "../components/ui/use-toast";
-import contractABI from "../contracts/EstateETH.json";
+import * as contractABI from "../contracts/EstateETH.json";
 import { Property } from "../types";
 
 const BuyProperties = () => {
@@ -20,7 +20,25 @@ const BuyProperties = () => {
       );
 
       const allProperties = await contract.getAllProperties();
-      setProperties(allProperties);
+      if (!allProperties) {
+        setProperties([]);
+        return;
+      }
+
+      const formattedProperties = allProperties.map((prop: any) => ({
+        id: Number(prop.id),
+        owner: prop.owner,
+        name: prop.name,
+        location: prop.location,
+        price: prop.price.toString(),
+        imageHash: prop.imageHash,
+        bedrooms: Number(prop.bedrooms),
+        propertyType: prop.propertyType,
+        kitchens: Number(prop.kitchens),
+        isSold: prop.isSold
+      }));
+      
+      setProperties(formattedProperties);
     } catch (error) {
       console.error("Error loading properties:", error);
       toast({
@@ -71,7 +89,7 @@ const BuyProperties = () => {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-purple-500"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-purple-500" />
       </div>
     );
   }

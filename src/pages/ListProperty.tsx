@@ -3,7 +3,7 @@ import { ethers } from "ethers";
 import { useToast } from "../components/ui/use-toast";
 import { Input } from "../components/ui/input";
 import { Button } from "../components/ui/button";
-import contractABI from "../contracts/EstateETH.json";
+import * as contractABI from "../contracts/EstateETH.json";
 import axios from "axios";
 
 const ListProperty = () => {
